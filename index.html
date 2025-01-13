@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Top 7 mechów z gry RPG lancer">
+        <meta name="author" content="Jeremi Juchnowicz">
+          <meta name="keywords" content="Lancer, Mechy, Top 7, RPG">
+        <title>Lancer - top 7 mechów</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="main.js" defer>
+            
+        </script>
+    </head>
+    <body>
+        <h1>TOP 7 MECHÓW W RPG LANCER</h1>
+        <div id="tabela_komputer" >
+
+            <table >
+                <tr>
+                    <td><a href="#gallery">Ranking</a></td>
+                    <td><a href="#formularz">Pytanie</a></td>
+                    <td><a href="#media">Film</a></td>
+                    <td><a href="#mapa">Mapa</a></td>
+                </tr>
+            </table>
+        </div> 
+        <div id="tablet_menu">
+            <div class="menu_button">
+                <button onclick="tablet_open_menu()">Menu</button>
+            </div>
+            
+        </div>
+        <div id="telefon_menu">
+            <div class="menu_button">
+                <button onclick="telefon_open_menu()">Menu</button>
+            </div>
+            
+        </div>
+        <div id="lista">
+            <p>Przed wami lista:</p>
+            <ul>
+                <li>Najfajniejszych</li>
+                <li>Najciekawszych</li>
+                <li>Moich najulubieńszych</li>
+            </ul>
+            <p>Mechów z gry RPG lancer</p>
+        </div>
+        <div id="gallery">
+        <h2 id="numer" >Numer 6</h2>
+        <div class="gallery">
+            <img id="photo">
+            <div id="info">
+                    
+                <table>
+                    <tr><td>Nazwa:</td><td id="nazwa"></td></tr>
+                    <tr><td>Manufaktura:</td><td id="manufaktura"></td></tr>
+                    <tr><td>Ksiązka:</td><td id="ksiazka"></td></tr>
+                </table>
+                <hr>
+                <p id="opinia"></p>
+            </div>
+            <div id="buttons">
+                <button onclick="prev()">POPRZEDNI</button>
+                <button onclick="next()">NASTEPNY</button>
+            </div>
+            
+        </div>
+        </div>
+        <div id="formularz">
+            <h2>Jaka manufaktura wariacie?</h2>
+            <form>
+                <input type="radio" id="GMS" name="manufaktura" value="GMS" >
+                <label for="GMS">GMS</label><br>
+
+                <input type="radio" id="IPSN" name="manufaktura" value="IPS-N">
+                <label for="IPSN">IPS-N</label><br>
+
+                <input type="radio" id="SSC" name="manufaktura" value="SSC">
+                <label for="SSC">SSC</label><br>
+
+                <input type="radio" id="HORUS" name="manufaktura" value="Opcja 4">
+                <label for="HORUS">HORUS</label><br>
+
+                <input type="radio" id="HA" name="manufaktura" value="Harrison Armory">
+                <label for="HA">Harrison Armory</label><br>
+
+                <input type="submit"value="Wyślij">
+                <input type="reset" value="Wyczyść">
+            </form>
+        </div>
+        <div id="media">
+            <h2>Więcej o Lancerze</h2>
+            <iframe id="yt" src="https://www.youtube.com/embed/V2FSg-5sKPM?si=c1vHDCgrOu9IlC29" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="mapa">
+        <h2>Obowiązkowa mapa najlepsej częsci warszawy:</h2> 
+        <iframe id="big_map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39099.707657490784!2d21.177655108205496!3d52.23009161973061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed3e834bc0c65%3A0xfc3673f41a6f0ca0!2sWeso%C5%82a%2C%20Warszawa!5e0!3m2!1spl!2spl!4v1736686921342!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="mid_map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39099.707657490784!2d21.177655108205496!3d52.23009161973061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed3e834bc0c65%3A0xfc3673f41a6f0ca0!2sWeso%C5%82a%2C%20Warszawa!5e0!3m2!1spl!2spl!4v1736686921342!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="smol_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39099.707657490784!2d21.177655108205496!3d52.23009161973061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed3e834bc0c65%3A0xfc3673f41a6f0ca0!2sWeso%C5%82a%2C%20Warszawa!5e0!3m2!1spl!2spl!4v1736686921342!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <footer>
+           <h5>Jeremi Juchnowicz 2tc</h5>
+        </footer>
+    
+    </body>
+</html>
